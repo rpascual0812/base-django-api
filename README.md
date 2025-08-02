@@ -24,3 +24,4 @@ sudo docker compose run --rm app sh -c "python manage.py makemigrations"
 sudo docker compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
 
 ## Create a superuser using cli
+sudo docker compose run --rm app sh -c "python manage.py createsuperuser"
